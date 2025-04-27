@@ -1,4 +1,4 @@
-
+333333
 # Taller de BBC Microbit v2
 
 Este es el repositorio para el taller con la BBC Microbit v2 y TinyGo
@@ -186,3 +186,26 @@ Ejercicios extra:
 - Utiliza otra fuente del paquete tinyfont, puedes encontrarlas en el repositorio: https://github.com/tinygo-org/tinyfont/
 
 Nota: al ser una pantalla de 5x5 no hay mucho espacio y hay que utilizar las fuentes más pequeñas
+
+
+## step11 - Bluetooth
+
+
+Ejecuta el código con el siguiente comando, ¡OJO! en este caso el target es ligeramente diferente, usaremos **microbit-v2-s113v7** :
+
+```
+tinygo flash --target=microbit-v2-s113v7 --programmer=cmsis-dap --monitor ./tutorial/step11
+```
+
+Necesitaremos una aplicación que se conecte al Microbit mediante BLE para ver la información que está enviando.
+Podemos usar nRF Connect por ejemplo:
+    - [Android](https://play.google.com/store/apps/details?id=no.nordicsemi.android.mcp&hl=en-US)
+    - [Apple](https://apps.apple.com/us/app/nrf-connect-for-mobile/id1054362403)
+    - [Desktop](https://www.nordicsemi.com/Products/Development-tools/nrf-connect-for-desktop/download)
+
+Una vez instalada, puedes seguir estos pasos:
+
+1- Conectate al microbit, se llama "TinyGo" si no lo cambiaste
+2- Entra en el servicio de temperatura
+3- Activa las notificaciones para que se actualice el valor
+4- Pon el dedo en el acelerómetro/sensor de temperatura para ver como asciende la temperatura detectada
