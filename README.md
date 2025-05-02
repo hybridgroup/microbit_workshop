@@ -65,6 +65,12 @@ Una vez que se ha flasheado correctamente, el LED de la esquina superior izquier
 
 Nota: La matriz LED está conectada con una técnica llamada [charlieplexing](https://en.wikipedia.org/wiki/Charlieplexing) (o multiplexing) que permite conectar un gran número de LEDs con un reducido número de pines haciendo uso de la persistencia de visión. Ahondaremos en este más adelante.
 
+
+
+![step 1](./tutorial/assets/bliking_led.gif)
+
+
+
 ## step2 - LED + button 
 
 BBC Microbit tiene dos botones A (a la izquierda) y B (a la derecha). En este ejemplo cada vez que pulses el botón A se encenderá el LED de la esquina superior izquierda de la matriz.
@@ -74,6 +80,9 @@ Ejecuta el código con el siguiente comando:
 ```
 tinygo flash --target=microbit-v2 ./tutorial/step2
 ```
+
+
+![step 2](./tutorial/assets/led_button.gif)
 
 ## step3 - LEDs + button A + button B
 
@@ -85,15 +94,24 @@ Ejecuta el código con el siguiente comando:
 tinygo flash --target=microbit-v2 ./tutorial/step3
 ```
 
+
+![step 3](./tutorial/assets/led_button_a_b.gif)
+
+
+
 ## step4 - LED + button touch
 
-BBC Microbit tiene un botón táctil (capacitativo), el logotipo dorado encima de la matriz. En este ejemplo cada vez que pulses el logotipo dorado se encenderá el LED de la esquina superior izquierda de la matriz. El botón funciona regulín.
+BBC Microbit tiene un botón táctil (capacitativo), el logotipo dorado encima de la matriz. En este ejemplo cada vez que pulses el logotipo dorado se encenderá el LED de la esquina superior izquierda de la matriz. **El botón funciona regulín**.
 
 Ejecuta el código con el siguiente comando:
 
 ```
 tinygo flash --target=microbit-v2 ./tutorial/step4
 ```
+
+![step 4](./tutorial/assets/touch.gif)
+
+
 
 ## step5 - button A + buzzer
 
@@ -104,9 +122,19 @@ Ejecuta el código con el siguiente comando:
 tinygo flash --target=microbit-v2 ./tutorial/step5
 ```
 
+
+![step 5](./tutorial/assets/buzzer.gif)
+_¿esperabas sonido de un GIF?_
+
+
 Ejercicios extra:
 - Puedes hacer que toque una nota diferente con el botón B
 - O que toque una melodía (varias notas seguidas)
+
+
+
+
+
 
 ## step6 - LED matrix
 
@@ -117,6 +145,10 @@ Ejecuta el código con el siguiente comando:
 ```
 tinygo flash --target=microbit-v2 ./tutorial/step6
 ```
+
+![step 6](./tutorial/assets/ledmatrix.gif)
+
+
 
 Ejercicios extra:
 - Crea tu propio diseño para mostrar en la matriz
@@ -144,6 +176,11 @@ Hello Gophers! 4
 ...
 ```
 
+
+![step 7](./tutorial/assets/serial.gif)
+
+
+
 ## step8 - Accelerometer, compass & temperature sensors
 
 En este ejemplo volveremos a hacer uso de la comunicación USB CDC para ver en la terminal los valores del LSM303AGR. LSM303AGR es el acelerómetro y brújula digital que tiene el BB Microbit v2. 
@@ -155,6 +192,10 @@ Ejecuta el código con el siguiente comando:
 ```
 tinygo flash --target=microbit-v2 --monitor ./tutorial/step8
 ```
+
+![step 8](./tutorial/assets/accel.gif)
+
+
 
 Ejercicios extra:
 - Crea un minijuego en el que se mueva un píxel por la matriz según la inclinación de la BBC Microbit usando el acelerómetro
@@ -172,6 +213,10 @@ Ejecuta el código con el siguiente comando:
 tinygo flash --target=microbit-v2 ./tutorial/step9
 ```
 
+![step 9](./tutorial/assets/tinydraw.jpg)
+
+
+
 ## step10 - Tinyfont
 
 Tinyfont es un pequeño paquete que permite escribir texto en cualquier pantalla que implemente la interfaz ```Displayer```.
@@ -181,6 +226,11 @@ Ejecuta el código con el siguiente comando:
 ```
 tinygo flash --target=microbit-v2 ./tutorial/step10
 ```
+
+
+![step 10](./tutorial/assets/tinyfont.gif)
+
+
 
 Ejercicios extra:
 - Utiliza otra fuente del paquete tinyfont, puedes encontrarlas en el repositorio: https://github.com/tinygo-org/tinyfont/
@@ -206,6 +256,18 @@ Podemos usar nRF Connect por ejemplo:
 Una vez instalada, puedes seguir estos pasos:
 
 1- Conectate al microbit, se llama "TinyGo" si no lo cambiaste
+
+![step 11.1](./tutorial/assets/ble1.jpg)
+
+
 2- Entra en el servicio de temperatura
+
+![step 11.2](./tutorial/assets/ble2.jpg)
+
 3- Activa las notificaciones para que se actualice el valor
+
+![step 11.3](./tutorial/assets/ble3.jpg)
+
 4- Pon el dedo en el acelerómetro/sensor de temperatura para ver como asciende la temperatura detectada
+
+![step 11.4](./tutorial/assets/temp_sensor.jpg)

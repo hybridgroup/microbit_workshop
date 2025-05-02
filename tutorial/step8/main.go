@@ -43,16 +43,16 @@ func main() {
 		}
 
 		accel_x, accel_y, accel_z, _ := sensor.ReadAcceleration()
-		println("ACCEL_X:", accel_x/100000, " ACCEL_Y:", accel_y/100000, " ACCEL_Z:", accel_z/100000)
+		println("ACCEL_X:", accel_x/1000, " ACCEL_Y:", accel_y/1000, " ACCEL_Z:", accel_z/1000)
 
 		mag_x, mag_y, mag_z, _ := sensor.ReadMagneticField()
-		println("MAG_X:", mag_x/100000, " MAG_Y:", mag_y/100000, " MAG_Z:", mag_z/100000)
+		println("MAG_X:", mag_x, " MAG_Y:", mag_y, " MAG_Z:", mag_z)
 
 		pitch, roll, _ := sensor.ReadPitchRoll()
-		println("Pitch:", float32(pitch)/100000, " Roll:", float32(roll)/100000)
+		println("Pitch:", pitch/1000, " Roll:", roll/1000)
 
 		heading, _ := sensor.ReadCompass()
-		println("Heading:", float32(heading)/100000, "degrees")
+		println("Heading:", heading/1000, "degrees")
 
 		temp, _ := sensor.ReadTemperature()
 		println("Temperature:", float32(temp)/1000, "*C")
