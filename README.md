@@ -1,4 +1,3 @@
-333333
 # Taller de BBC Microbit v2
 
 Este es el repositorio para el taller con la BBC Microbit v2 y TinyGo
