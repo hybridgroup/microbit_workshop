@@ -242,6 +242,9 @@ Nota: al ser una pantalla de 5x5 no hay mucho espacio y hay que utilizar las fue
 
 Ejecuta el código con el siguiente comando, ¡OJO! en este caso el target es ligeramente diferente, usaremos **microbit-v2-s113v7** :
 
+Para ejecutar este ejemplo, es posible que necesites instalar adicionalmente OPENOCD y ponerlo en el %PATH según tu sistema operativo: https://github.com/openocd-org/openocd/releases/tag/v0.12.0
+
+
 ```
 tinygo flash --target=microbit-v2-s113v7 --programmer=cmsis-dap --monitor ./tutorial/step11
 ```
