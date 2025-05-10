@@ -247,7 +247,7 @@ Para ejecutar este ejemplo, es posible que necesites instalar adicionalmente OPE
 
 
 
-Antes de ejecutar el siguiente paso, hay que flashear el softdevice en el microbit. Softdevice es el firmware encargado de administrar y controlar el bluetooth en el microcontrolador. Para ello hay que poner el Microbit en modo bootloader haciendo doble click en el botónde reset en la parte de atrás. Deberá aparecer en el ordenador montado como un disco externo llamado MICROBIT. Entonces hay que copiar a ese disco el siguiente fichero: https://github.com/tinygo-org/bluetooth/raw/refs/heads/release/s113_nrf52_7.0.1/s113_nrf52_7.0.1_softdevice.hex
+Antes de ejecutar el siguiente paso, hay que flashear el softdevice en el microbit. Softdevice es el firmware encargado de administrar y controlar el bluetooth en el microcontrolador. Para ello hay que poner el Microbit en modo bootloader haciendo doble click en el botónde reset en la parte de atrás. Deberá aparecer en el ordenador montado como un disco externo llamado MICROBIT. Entonces hay que copiar a ese disco el siguiente fichero: https://github.com/tinygo-org/bluetooth/blob/release/s113_nrf52_7.0.1/s113_nrf52_7.0.1_softdevice.hex
 
 
 ```
